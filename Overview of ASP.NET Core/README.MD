@@ -1,20 +1,22 @@
-# مروری بر ASP.NET Core
+# بررسی اجمالی ASP.NET Core
 
 ASP.NET Core یک فریموورک چند پلتفرمی، با کارایی بالا و اپن سورس برای ساخت برنامه های مدرن، ابری و متصل به اینترنت است.
 
 
-با ASP.NET Core می توان:
+## با ASP.NET Core می توان:
 
 - ساخت وب سرویس‌ها و برنامه‌ های  وب، برنامه‌های اینترنت اشیا (IoT) و بک اند تلفن همراه.
 - استفاده از ابزارهای توسعه مورد علاقه خود در Windows، macOS و Linux
 - گسترش در فضای ابری یا در محل
 - اجرا  روی NET Core
 
-## چرا ASP.NET Core را انتخاب کنید؟
+
+## دلیل انتخاب ASP.NET Core
 
 میلیون‌ها توسعه‌دهنده از ASP.NET 4.x برای ایجاد برنامه‌های وب استفاده می‌کنند یا از آن استفاده کرده‌اند. ASP.NET Core یک طراحی مجدد از ASP.NET 4.x است که شامل تغییرات معماری می شود که منجر به یک فریوورک ماژولارتر می شود.
 
-ASP.NET Core مزایای زیر را ارائه می دهد:
+
+##  مزایای ASP.NET Core:
 
 - یک unified story برای ساخت رابط کاربری وب و APIهای وب.
 - برای آزمایش پذیری طراحی شده است.
@@ -38,3 +40,65 @@ ASP.NET Core مزایای زیر را ارائه می دهد:
 - ابزاری که توسعه وب مدرن را ساده می کند.
 
 
+## ساخت API های وب و رابط های کاربر وب با استفاده از ASP.NET Core MVC
+
+- الگوی Model-View-Controller (MVC) کمک می کند تا API های وب و برنامه های وب شما قابل آزمایش باشند.
+- Razor Pages یک مدل برنامه نویسی مبتنی بر صفحه است که ساخت رابط کاربری وب را آسان تر و کارآمدتر می کند.
+- Razor markup یک syntax مولد برای Razor Pages و ویوهای MVC فراهم می کند.
+- Tag Helpers کد سمت سرور را برای مشارکت در ایجاد و رندرعناصر HTML در فایل‌های Razor فعال می‌کند.
+- پشتیبانی داخلی از data formats و content negotiation متعدد به API های وب شما امکان دسترسی به طیف وسیعی از کلاینت ها، از جمله مرورگرها و دستگاه های تلفن همراه را می دهد.
+- Model binding به طور خودکار داده ها را از درخواست های HTTP به پارامترهای متد اکشن نگاشت می کند.
+- اعتبار سنجی مدل به طور خودکار اعتبار سنجی سمت مشتری و سمت سرور را انجام می دهد.
+
+
+## توسعه سمت کلاینت
+
+ASP.NET Core به طور یکپارچه با چارچوب ها و کتابخانه های محبوب سمت کلاینت، از جمله Blazor، Angular، React و Bootstrap ادغام می شود. برای اطلاعات بیشتر، به [ASP.NET Core Blazor](https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-7.0) و موضوعات مرتبط زیر *توسعه سمت کلاینت* مراجعه کنید.
+
+
+## چارچوب های هدف اصلی ASP.NET
+
+ASP.NET Core 3.x یا جدیدتر فقط می تواند .NET Core را هدف قرار دهد. به طور کلی، هسته ASP.NET از کتابخانه های استاندارد دات نت تشکیل شده است. کتابخانه های نوشته شده با دات نت استاندارد 2.0 روی هر پلتفرم دات نت که دات نت استاندارد 2.0 را پیاده سازی می کند اجرا می شود.
+
+چندین مزیت برای هدف قرار دادن .NET Core وجود دارد و این مزایا با هر انتشار افزایش می یابد. برخی از مزایای NET Core نسبت به .NET Framework عبارتند از:
+
+- کراس پلت فرم. قابل اجرا بر روی ویندوز، macOS و لینوکس.
+- عملکرد بهبود یافته است
+-  نسخه ساید بای ساید
+- API های جدید
+- متن باز
+
+
+
+## مسیر یادگیری توصیه شده
+
+مایکروسافت آموزش های زیر را برای آشنایی با توسعه برنامه های ASP.NET Core توصیه می کند:
+
+1. آموزش برای نوع برنامه ای که می خواهید توسعه دهید یا نگهداری کنید.
+| نوع برنامه | سناریو | آموزش |
+| --- | --- |
+| برنامه وب | توسعه UI وب سمت سرور جدید | [با Razor Pages شروع کنید](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-7.0) |
+| برنامه وب | نگهداری از برنامه MVC | [با MVC شروع کنید](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-7.0) |
+| برنامه وب | توسعه رابط کاربری وب سمت کلاینت| [با Blazor شروع کنید](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro) |
+| Web API | سرویس HTTP RESTful | [Create a web API†](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0) |
+| برنامه تماس از راه دور | یرویس های قرارداد اول با استفاده از بافرهای پروتکل | [با یک سرویس gRPC شروع کنید](https://learn.microsoft.com/en-us/aspnet/core/tutorials/grpc/grpc-start?view=aspnetcore-7.0) |
+| برنامه بلادرنگ | ارتباط دو طرفه بین سرورها و کلاینت ها متصل | [با SignalR شروع کنید ](https://learn.microsoft.com/en-us/aspnet/core/tutorials/signalr?view=aspnetcore-7.0)|
+
+2. آموزشی که نحوه دسترسی به داده های اولیه را نشان می دهد.
+
+| سناریو | آموزش |
+| --- | --- |
+| توسعه جدید | [Razor Pages with Entity Framework Core](https://learn.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-7.0) |
+| نگهداری از برنامه MVC | [MVC با Entity Framework Core](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-7.0) |
+
+3. یک نمای کلی از ASP.NET Core [مبانی] (https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-7.0) را بخوانید که برای همه انواع برنامه ها اعمال می شود.
+
+4. فهرست مطالب را برای سایر موضوعات مورد علاقه مرور کنید.
+
+† همچنین [آموزش تعاملی وب API] (https://learn.microsoft.com/en-us/training/modules/build-web-api-net-core) وجود دارد. نصب محلی ابزارهای توسعه مورد نیاز نیست. کد در یک Azure Cloud Shell در مرورگر شما اجرا می شود و از curl برای آزمایش استفاده می شود.
+
+
+
+
+## مهاجرت از دات نت فریم ورک
+برای یک راهنمای مرجع برای انتقال برنامه‌های ASP.NET 4.x به ASP.NET Core، به به‌روزرسانی از [ASP.NET به ASP.NET Core] (https://learn.microsoft.com/en-us/aspnet/core) مراجعه کنید. /migration/proper-to-2x/?view=aspnetcore-7.0).
