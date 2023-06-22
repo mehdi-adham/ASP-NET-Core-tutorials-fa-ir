@@ -98,9 +98,14 @@ ASP.NET Core یک فریموورک چند پلتفرمی، با کارایی ب�
 | توسعه جدید | [Razor Pages with Entity Framework Core](https://learn.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-7.0) |
 | نگهداری از برنامه MVC | [MVC با Entity Framework Core](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-7.0) |
 
-3. یک نمای کلی از ASP.NET Core [مبانی](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-7.0) را بخوانید که برای همه انواع برنامه ها اعمال می شود.
-
-4. فهرست مطالب را برای سایر موضوعات مورد علاقه مرور کنید.
+<ol start="3" dir="rtl">
+<li>
+<p dir="auto">یک نمای کلی از ASP.NET Core <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-7.0" rel="nofollow">مبانی</a> را بخوانید که برای همه انواع برنامه ها اعمال می شود.</p>
+</li>
+<li>
+<p dir="auto">فهرست مطالب را برای سایر موضوعات مورد علاقه مرور کنید.</p>
+</li>
+</ol>
 
 † همچنین [آموزش تعاملی وب API](https://learn.microsoft.com/en-us/training/modules/build-web-api-net-core) وجود دارد. نصب محلی ابزارهای توسعه مورد نیاز نیست. کد در یک Azure Cloud Shell در مرورگر شما اجرا می شود و از curl برای آزمایش استفاده می شود.
 
