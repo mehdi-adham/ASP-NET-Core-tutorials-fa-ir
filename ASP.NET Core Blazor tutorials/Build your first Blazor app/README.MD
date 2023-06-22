@@ -7,13 +7,13 @@
 
 **آیا از قبل Visual Studio 2022 دارید؟**
 
-اگر از قبل Visual Studio 2022 دارید، می توانید ASP.NET و web_development را اضافه کنید:
+اگر از قبل Visual Studio 2022 دارید، می توانید ASP.NET و web development را اضافه کنید:
 
 - کلید Windows را انتخاب کنید، Visual Studio Installer را تایپ کنید و Enter را فشار دهید.
 - اگر از شما خواسته شد، به نصب کننده اجازه دهید خودش را به روز کند.
-- اگر بروزرسانی برای ویژوال استودیو 2022 در دسترس باشد، دکمه Update نشان داده می شود. قبل از اصلاح نصب، آن را برای به روز رسانی انتخاب کنید.
+- اگر بروزرسانی برای ویژوال استودیو 2022 در دسترس باشد، دکمه Update نشان داده می شود. قبل از تغییر نصب، آن را برای به روز رسانی انتخاب کنید.
 - نصب Visual Studio 2022 خود را پیدا کنید و دکمه Modify را انتخاب کنید.
-- اگر قبلاً انتخاب نشده‌اید، ASP.NET و web_development را انتخاب کرده و دکمه Modify را انتخاب کنید. در غیر این صورت، فقط پنجره را ببندید.
+- اگر قبلاً انتخاب نشده‌اید، ASP.NET و web development را انتخاب کرده و دکمه Modify را انتخاب کنید. در غیر این صورت، فقط پنجره را ببندید.
 
 ## ایجاد برنامه جدید
 
@@ -81,7 +81,7 @@ Welcome to your new app.
 <SurveyPrompt Title="How is Blazor working for you?" />
 ```
 
-قبلاً حاوی کدی است که آن را به عنوان صفحه اصلی تنظیم می کند و متن Hello, world را نمایش می دهد! و به برنامه جدید خود خوش آمدید. همچنین شامل یک کامپاننت SurveyPrompt است که لینکی به نظرسنجی فیدبک Blazor رندرمی کند.
+قبلاً حاوی کدی است که آن را به عنوان صفحه اصلی تنظیم می کند و متن Hello, world را نمایش می دهد! و به برنامه جدید خود خوش آمدید. همچنین شامل یک کامپوننت SurveyPrompt است که لینکی به نظرسنجی فیدبک Blazor رندرمی کند.
 
 ## شمارنده را امتحان کنید
 
@@ -122,5 +122,90 @@ Welcome to your new app.
 - رویداد onclick فعال می شود.
 - متد IncrementCount فراخوانی می شود.
 - مقدار currentCount افزایش می یابد.
-- کامپاننت برای نمایش شمارنده به روز شده رندر می شود
+- کامپوننت برای نمایش شمارنده به روز شده رندر می شود
 
+
+
+## اضافه کردن یک کامپوننت
+
+هر یک از فایل‌های .razor یک کامپوننت رابط کاربری را تعریف می‌کند که می‌تواند مجدداً استفاده شود.
+
+فایل Index.razor را در ویژوال استودیو باز کنید. فایل Index.razor از قبل وجود دارد و زمانی که پروژه را ایجاد کردید ایجاد شد. در پوشه Pages در دایرکتوری BlazorApp قرار دارد که قبلا ایجاد شده بود.
+
+با افزودن عنصر `<Counter />` در انتهای فایل Index.razor، یک کامپوننت Counter را به صفحه اصلی برنامه اضافه کنید.
+
+```C# 
+
+@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<Counter />
+```
+
+روی دکمه Hot Reload کلیک کنید تا تغییر را در برنامه در حال اجرا اعمال کنید. سپس کامپوننت Counter در صفحه اصلی نمایش داده می شود.
+
+![screenshot-blazor-tutorial-add](screenshot-blazor-tutorial-add.png)
+
+## تغییر یک کامپوننت
+
+پارامترهای کامپوننت با استفاده از ویژگی ها یا محتوای child مشخص می شوند، که به شما امکان می دهد ویژگی های کامپوننت فرزند را تنظیم کنید. پارامتری را بر روی کامپوننت Counter برای تعیین میزان افزایش آن با هر کلیک بر روی دکمه تعریف کنید:
+
+- یک ویژگی عمومی برای IncrementAmount با ویژگی `[Parameter]` اضافه کنید.
+- متد IncrementCount را تغییر دهید تا از IncrementAmount هنگام افزایش مقدار currentCount استفاده کنید.
+
+کد زیر نحوه دستیابی به آن را نشان می دهد.
+
+```C#
+
+@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    [Parameter]
+    public int IncrementAmount { get; set; } = 1;
+
+    private void IncrementCount()
+    {
+        currentCount += IncrementAmount;
+    }
+}
+```
+
+در Index.razor، به عنصر <Counter> یک ویژگی IncrementAmount اضافه کنید که مقدار افزایش را به ده تغییر می‌دهد:
+
+```C#
+
+@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<Counter IncrementAmount="10" />
+```
+
+با کلیک روی دکمه Hot Reload، تغییر را در برنامه اعمال کنید. کامپوننت Index اکنون شمارنده مخصوص به خود را دارد که هر بار که دکمه `Click me` را انتخاب می‌کنید ده شماره افزایش می‌یابد، همانطور که در تصویر زیر نشان داده شده است. کامپوننت `Counter` `(Counter.razor) `در `/counter` همچنان یک افزایش می یابد.
+
+تبریک می‌گوییم، شما اولین برنامه Blazor خود را ساخته و اجرا کرده‌اید!
+
+**منبع:**
+
+[Blazor Tutorial - Build your first Blazor app](https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/intro)
