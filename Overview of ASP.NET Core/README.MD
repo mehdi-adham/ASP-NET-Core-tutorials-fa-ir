@@ -114,4 +114,4 @@ ASP.NET Core یک فریموورک چند پلتفرمی، با کارایی ب�
 
 ## مهاجرت از دات نت فریم ورک
 
-برای یک راهنمای مرجع برای انتقال برنامه‌های ASP.NET 4.x به ASP.NET Core، به‌روزرسانی از [ASP.NET به ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/migration/proper-to-2x/?view=aspnetcore-7.0) را ببینید.
+برای  انتقال برنامه‌های ASP.NET 4.x به ASP.NET Core، به‌روزرسانی از [ASP.NET به ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/migration/proper-to-2x/?view=aspnetcore-7.0) را ببینید.
