@@ -38,6 +38,7 @@ ASP.NET Core یک فریموورک چند پلتفرمی، با کارایی ب�
 <li>Apache</li>
 <li>Docker</li>
 </ul>
+
 - نسخه ساید بای ساید.
 - ابزاری که توسعه وب مدرن را ساده می کند.
 
@@ -81,7 +82,7 @@ ASP.NET Core یک فریموورک چند پلتفرمی، با کارایی ب�
 1. آموزش برای نوع برنامه ای که می خواهید توسعه دهید یا نگهداری کنید.
 
 | نوع برنامه | سناریو | آموزش |
-| --- | --- |
+| --- | --- | --- |
 | برنامه وب | توسعه UI وب سمت سرور جدید | [با Razor Pages شروع کنید](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-7.0) |
 | برنامه وب | نگهداری از برنامه MVC | [با MVC شروع کنید](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-7.0) |
 | برنامه وب | توسعه رابط کاربری وب سمت کلاینت| [با Blazor شروع کنید](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro) |
@@ -97,7 +98,7 @@ ASP.NET Core یک فریموورک چند پلتفرمی، با کارایی ب�
 | توسعه جدید | [Razor Pages with Entity Framework Core](https://learn.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-7.0) |
 | نگهداری از برنامه MVC | [MVC با Entity Framework Core](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-7.0) |
 
-3. یک نمای کلی از ASP.NET Core [مبانی] (https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-7.0) را بخوانید که برای همه انواع برنامه ها اعمال می شود.
+3. یک نمای کلی از ASP.NET Core [مبانی](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-7.0) را بخوانید که برای همه انواع برنامه ها اعمال می شود.
 
 4. فهرست مطالب را برای سایر موضوعات مورد علاقه مرور کنید.
 
