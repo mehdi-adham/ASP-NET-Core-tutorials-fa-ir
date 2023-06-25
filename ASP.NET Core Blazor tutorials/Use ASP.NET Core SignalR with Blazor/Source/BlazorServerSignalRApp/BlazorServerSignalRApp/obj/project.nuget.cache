@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "1P4kUOGRO28/bADKEoPOYI04Vshf2oi6Dpe68MH3pI/V5BAOx/WkXArICdQS7aQiE9b9HERUU4remZJTmGpFaQ==",
+  "success": true,
+  "projectFilePath": "D:\\Learning\\1402\\Microsoft\\ASP-NET-Core-tutorials-fa-ir\\ASP.NET Core Blazor tutorials\\Use ASP.NET Core SignalR with Blazor\\Source\\BlazorServerSignalRApp\\BlazorServerSignalRApp\\BlazorServerSignalRApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.8\\microsoft.aspnetcore.connections.abstractions.7.0.8.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\7.0.8\\microsoft.aspnetcore.http.connections.client.7.0.8.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\7.0.8\\microsoft.aspnetcore.http.connections.common.7.0.8.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\7.0.8\\microsoft.aspnetcore.signalr.client.7.0.8.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\7.0.8\\microsoft.aspnetcore.signalr.client.core.7.0.8.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\7.0.8\\microsoft.aspnetcore.signalr.common.7.0.8.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\7.0.8\\microsoft.aspnetcore.signalr.protocols.json.7.0.8.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.extensions.features\\7.0.8\\microsoft.extensions.features.7.0.8.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
+    "C:\\Users\\WIN10\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
